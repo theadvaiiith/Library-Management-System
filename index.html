@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Library Management System</h1>
+    </header>
+    <main>
+        <!-- Branch Management Section -->
+        <section id="branch">
+            <h2>Manage Branches</h2>
+            <form id="branchForm">
+                <input type="text" id="branchNo" placeholder="Branch Number" required>
+                <input type="text" id="managerId" placeholder="Manager ID" required>
+                <input type="text" id="branchAddress" placeholder="Branch Address" required>
+                <input type="text" id="branchContact" placeholder="Contact Number" required>
+                <button type="submit">Add Branch</button>
+            </form>
+            <table id="branchTable">
+                <thead>
+                    <tr>
+                        <th>Branch Number</th>
+                        <th>Manager ID</th>
+                        <th>Address</th>
+                        <th>Contact</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Populated dynamically with JavaScript -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Employee Management Section -->
+        <section id="employee">
+            <h2>Manage Employees</h2>
+            <form id="employeeForm">
+                <input type="text" id="empId" placeholder="Employee ID" required>
+                <input type="text" id="empName" placeholder="Employee Name" required>
+                <input type="text" id="empPosition" placeholder="Position" required>
+                <input type="number" id="empSalary" placeholder="Salary" required>
+                <input type="text" id="empBranchNo" placeholder="Branch Number" required>
+                <button type="submit">Add Employee</button>
+            </form>
+            <table id="employeeTable">
+                <thead>
+                    <tr>
+                        <th>Employee ID</th>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Salary</th>
+                        <th>Branch Number</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Populated dynamically with JavaScript -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Borrowed Books Management Section -->
+        <section id="borrowedBooks">
+            <h2>Manage Borrowed Books</h2>
+            <form id="borrowedBooksForm">
+                <input type="text" id="bookName" placeholder="Book Name" required>
+                <input type="text" id="borrowerName" placeholder="Borrower Name" required>
+                <input type="text" id="borrowerPhone" placeholder="Borrower Phone" required>
+                <input type="date" id="issueDate" required>
+                <input type="date" id="returnDate" required>
+                <input type="date" id="fineDate" required>
+                <input type="number" id="fineAmount" placeholder="Fine Amount" required>
+                <button type="submit">Add Record</button>
+            </form>
+            <table id="borrowedBooksTable">
+                <thead>
+                    <tr>
+                        <th>Book Name</th>
+                        <th>Borrower Name</th>
+                        <th>Borrower Phone</th>
+                        <th>Issue Date</th>
+                        <th>Return Date</th>
+                        <th>Fine Date</th>
+                        <th>Fine Amount</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Populated dynamically with JavaScript -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
